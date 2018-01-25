@@ -20,3 +20,6 @@
 [submodule "mqtt_sn"]
 	path = mqtt_sn
 	url = https://github.com/sk2-broken/mqtt-sn-contiki_example
+[submodule "apps/tinydtls"]
+	path = apps/tinydtls
+	url = https://github.com/sk2-broken/org.eclipse.tinydtls
