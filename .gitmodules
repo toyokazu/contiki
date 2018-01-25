@@ -26,3 +26,4 @@
 [submodule "mqtt_sn_dtls"]
 	path = mqtt_sn_dtls
 	url = https://github.com/sk2-broken/mqtt-sn-contiki_example
+	branch = mqtt-sn-dtls-test
