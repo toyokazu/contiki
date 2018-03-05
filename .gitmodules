@@ -19,7 +19,10 @@
 	url = https://github.com/g-oikonomou/sensniff.git
 [submodule "apps/tinydtls"]
 	path = apps/tinydtls
-	url = https://github.com/sk2-broken/tinydtls-0.8.2
+	url = https://github.com/sk2-broken/org.eclipse.tinydtls
 [submodule "mqtt_sn"]
 	path = mqtt_sn
 	url = https://github.com/sk2-broken/mqtt-sn-contiki_example
+[submodule "mqtt_sn_dtls"]
+        path = mqtt_sn_dtls
+        url = https://github.com/sk2-broken/mqtt-sn-contiki_example
