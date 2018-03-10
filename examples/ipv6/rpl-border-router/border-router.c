@@ -57,6 +57,8 @@
 #define DEBUG DEBUG_NONE
 #include "net/ip/uip-debug.h"
 
+#include "powertrace.h"
+
 static uip_ipaddr_t prefix;
 static uint8_t prefix_set;
 
@@ -403,6 +405,8 @@ PROCESS_THREAD(border_router_process, ev, data)
 
   PROCESS_BEGIN();
 
+  powertrace_start(CLOCK_SECOND / 10);
+
 /* While waiting for the prefix to be sent through the SLIP connection, the future
  * border router can join an existing DAG as a parent or child, or acquire a default
  * router that will later take precedence over the SLIP fallback interface.
@@ -447,6 +451,8 @@ PROCESS_THREAD(border_router_process, ev, data)
       rpl_repair_root(RPL_DEFAULT_INSTANCE);
     }
   }
+
+  powertrace_stop();
 
   PROCESS_END();
 }

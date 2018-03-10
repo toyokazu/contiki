@@ -22,8 +22,8 @@
 	url = https://github.com/sk2-broken/org.eclipse.tinydtls
 [submodule "mqtt_sn"]
 	path = mqtt_sn
-	url = https://github.com/sk2-broken/mqtt-sn-contiki_example
+	url = https://github.com/toyokazu/mqtt-sn-contiki_example.git
 [submodule "mqtt_sn_dtls"]
 	path = mqtt_sn_dtls
-	url = https://github.com/sk2-broken/mqtt-sn-contiki_example
+	url = https://github.com/toyokazu/mqtt-sn-contiki_example.git
 	branch = mqtt-sn-dtls-test
