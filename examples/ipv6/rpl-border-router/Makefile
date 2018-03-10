@@ -3,6 +3,8 @@ all: $(CONTIKI_PROJECT)
 
 CONTIKI=../../..
 
+APPS += powertrace
+
 #linker optimizations
 SMALL=1
 
