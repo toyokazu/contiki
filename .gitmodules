@@ -27,3 +27,7 @@
 	path = mqtt_sn_dtls
 	url = https://github.com/toyokazu/mqtt-sn-contiki_example.git
 	branch = mqtt-sn-dtls-test
+[submodule "mqtt_sn_dtls-no_publish"]
+	path = mqtt_sn_dtls-no_publish
+	url = https://github.com/toyokazu/mqtt-sn-contiki_example.git
+	branch = mqtt-sn-dtls-no-publish

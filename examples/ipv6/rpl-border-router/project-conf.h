@@ -66,4 +66,21 @@
 #define WEBSERVER_CONF_CFS_CONNS 2
 #endif
 
+#ifdef NETSTACK_CONF_RDC
+#undef NETSTACK_CONF_RDC
+#endif
+#ifdef NETSTACK_CONF_MAC
+#undef NETSTACK_CONF_MAC
+#endif
+
+#define NETSTACK_CONF_CHANNEL_CHECK_RATE 8
+
+#define NETSTACK_CONF_MAC csma_driver
+//#define NETSTACK_CONF_MAC nullmac_driver
+#define NETSTACK_CONF_RDC contikimac_driver
+//#define NETSTACK_CONF_RDC cxmac_driver
+//#define NETSTACK_CONF_MAC nullmac_driver
+//#define NETSTACK_CONF_RDC nullrdc_driver
+
+
 #endif /* PROJECT_ROUTER_CONF_H_ */
